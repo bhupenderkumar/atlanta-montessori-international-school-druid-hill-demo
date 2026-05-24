@@ -3,92 +3,74 @@ export default function Programs() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Image from 'next/image';
+import Link from 'next/link';
 
-function ProgramsPage() {
+function Programs() {
   return (
-    <div className="container mx-auto p-4">
+    <>
       <Head>
-        <title>Atlanta Montessori International School - Druid Hills</title>
-        <meta name="description" content="AMS Druid Hills Programs" />
+        <title>Atlanta Montessori International School - Druid Hills | Programs</title>
+        <meta name="description" content="Atlanta Montessori International School - Druid Hills programs" />
       </Head>
-
-      <header className="bg-gray-800 text-white p-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold">Atlanta Montessori International School - Druid Hills</h1>
-          <p>1215 S Ponce De Leon Ave NE, Atlanta, GA 30306</p>
-          <p>Phone: (404) 500-0501</p>
-        </div>
+      <header>
+        <nav>
+          <ul>
+            <li><Link href="/"><a>Home</a></Link></li>
+            <li><Link href="/about"><a>About Us</a></Link></li>
+            <li><Link href="/programs"><a>Programs</a></Link></li>
+            <li><Link href="/admissions"><a>Admissions</a></Link></li>
+            <li><Link href="/contact"><a>Contact</a></Link></li>
+          </ul>
+        </nav>
       </header>
-
-      <main className="max-w-7xl mx-auto p-4">
-        <section className="bg-white py-8">
-          <h2 className="text-2xl font-bold mb-4">Our Programs</h2>
-          <p>
-            Atlanta Montessori International School - Druid Hills offers a range of programs for students from toddlerhood to high school graduation.
-          </p>
-          <ul className="list-disc ml-8">
-            <li>Montessori Toddler Program (18 months - 3 years)</li>
-            <li>Primary Program (3 years - 6 years)</li>
-            <li>Elementary Program (6 years - 9 years)</li>
-            <li>Secondary Program (9 years - 12 years)</li>
-            <li>High School Program (12 years - 18 years)</li>
-          </ul>
+      <main>
+        <section className="hero">
+          <h1>Our Programs</h1>
+          <p>At Atlanta Montessori International School - Druid Hills, we offer a range of programs for children from birth to 12th grade.</p>
         </section>
-
-        <section className="bg-gray-100 py-8">
-          <h2 className="text-2xl font-bold mb-4">Curriculum</h2>
-          <p>
-            Our programs are designed to foster a love of learning and a strong foundation in academics, as well as social and emotional growth.
-          </p>
-          <ul className="list-disc ml-8">
-            <li>Language and Literacy</li>
-            <li>Mathematics</li>
-            <li>Science</li>
-            <li>History and Culture</li>
-            <li>Art and Music</li>
+        <section className="programs">
+          <h2>Infant and Toddler Program (6 weeks - 3 years)</h2>
+          <p>Our infant and toddler program is designed to foster a sense of wonder and curiosity in young children.</p>
+          <ul>
+            <li>Trained and experienced teachers</li>
+            <li>Low student-to-teacher ratio</li>
+            <li>Montessori materials and activities</li>
           </ul>
-        </section>
-
-        <section className="bg-white py-8">
-          <h2 className="text-2xl font-bold mb-4">Faculty</hassistant
-            Our faculty is dedicated to providing a supportive and inclusive learning environment.
-          </p>
-          <p>
-            Meet our faculty and learn more about their backgrounds and qualifications.
-          </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Meet Our Faculty
-          </button>
-        </section>
-
-        <section className="bg-gray-100 py-8">
-          <h2 className="text-2xl font-bold mb-4">Admissions</h2>
-          <p>
-            We welcome students from diverse backgrounds and are committed to making our school a welcoming and inclusive community.
-          </p>
-          <ul className="list-disc ml-8">
-            <li>Application Process</li>
-            <li>Tour and Interview</li>
-            <li>Enrollment and Tuition</li>
+          <h2>Primary Program (3-6 years)</h2>
+          <p>Our primary program builds on the foundation established in the infant and toddler program, with a focus on practical life skills and academic preparation.</p>
+          <ul>
+            <li>Emphasis on self-directed learning</li>
+            <li>Hands-on activities and projects</li>
+            <li>Preparation for elementary school</li>
           </ul>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Apply Now
-          </button>
+          <h2>Elementary Program (6-12 years)</h2>
+          <p>Our elementary program is designed to foster a love of learning and a sense of community among students.</p>
+          <ul>
+            <li>Collaborative learning environment</li>
+            <li>Hands-on activities and projects</li>
+            <li>Preparation for middle school</li>
+          </ul>
+          <h2>Upper Elementary and Middle School Programs (9-12 years)</h2>
+          <p>Our upper elementary and middle school programs build on the foundation established in the elementary program, with a focus on academic rigor and personal growth.</p>
+          <ul>
+            <li>Challenging curriculum and activities</li>
+            <li>Preparation for high school</li>
+            <li>Emphasis on community service and leadership</li>
+          </ul>
         </section>
       </main>
-
-      <footer className="bg-gray-800 text-white p-4">
-        <div className="max-w-7xl mx-auto">
-          <p>&copy; 2023 Atlanta Montessori International School - Druid Hills</p>
-        </div>
+      <footer>
+        <p>&copy; Atlanta Montessori International School - Druid Hills</p>
+        <p>1215 S Ponce De Leon Ave NE, Atlanta, GA 30306 | (404) 500-0501</p>
       </footer>
-    </div>
+    </>
   );
 }
 
-export default ProgramsPage;
+export default Programs;
 ```
+
+This JSX code generates a Next.js page component for the programs page of the Atlanta Montessori International School - Druid Hills website. The page includes a navigation menu, a hero section with a brief introduction to the programs, and a section detailing the various programs offered by the school. The footer includes the school's contact information.
     </section>
   );
 }
