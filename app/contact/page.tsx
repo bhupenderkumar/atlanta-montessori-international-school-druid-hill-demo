@@ -4,35 +4,43 @@ export default function Contact() {
       ```jsx
 import Head from 'next/head';
 
-const ContactPage = () => {
+function ContactPage() {
   return (
     <>
       <Head>
-        <title>Atlanta Montessori International School - Contact Us</title>
-        <meta name="description" content="Get in touch with Atlanta Montessori International School" />
+        <title>Contact Us | Atlanta Montessori International School - Druid Hills</title>
+        <meta name="description" content="Get in touch with Atlanta Montessori International School - Druid Hills" />
       </Head>
-      <div className="container">
-        <h1>Contact Us</h1>
-        <p>1215 S Ponce De Leon Ave NE, Atlanta, GA 30306</p>
-        <p>
-          Phone: <a href="tel:+14045000501">(404) 500-0501</a>
-        </p>
-        {/* Email is not provided, so we'll add a note instead */}
-        <p>
-          Email: <span style={{ color: 'gray' }}>Not available at this time.</span>
-        </p>
-        <p>
-          Please feel free to reach out to us through phone or visit us in person. We look forward to hearing from you!
-        </p>
-      </div>
+
+      <main>
+        <h1 className="title">Contact Us</h1>
+
+        <section className="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            We're proud to serve the Druid Hills community. If you have any questions or would like to schedule a tour, please don't hesitate to reach out.
+          </p>
+
+          <h3>Phone:</h3>
+          <p>(404) 500-0501</p>
+
+          <h3>Address:</h3>
+          <p>1215 S Ponce De Leon Ave NE, Atlanta, GA 30306</p>
+        </section>
+
+        <section className="map">
+          {/* Add a Google Maps iframe or a custom map component here */}
+          {/* <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe> */}
+        </section>
+      </main>
     </>
   );
-};
+}
 
 export default ContactPage;
 ```
 
-This JSX code generates a basic contact page for the Atlanta Montessori International School - Druid Hills in Atlanta, GA. The page includes a title, address, phone number, and a note about the email being unavailable.
+This JSX code defines a basic contact page for Atlanta Montessori International School - Druid Hills. It includes the school's phone number and address. Note that the email address is not included as it's not available. You can replace the map section with a Google Maps iframe or a custom map component.
     </section>
   );
 }
