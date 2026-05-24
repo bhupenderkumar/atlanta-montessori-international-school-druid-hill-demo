@@ -9,58 +9,59 @@ export default function Home() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlanta Montessori International School - Druid Hills</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">News & Events</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Nurturing Curious Minds, One Child at a Time</h1>
-            <p>Discover the Atlanta Montessori International School - Druid Hills difference, where hands-on learning and personalized education empower students to reach their full potential.</p>
-            <button>Learn More</button>
-        </section>
-        <section class="feature">
-            <h2>Unparalleled Education for Unstoppable Learners</h2>
-            <div class="features">
-                <div class="feature-item">
-                    <h3>Individualized Learning Paths</h3>
-                    <p>Our experienced teachers work one-on-one with students to create tailored learning plans that cater to their unique needs and interests.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Montessori Method of Education</h3>
-                    <p>Our school is dedicated to the principles of Dr. Maria Montessori, fostering a child-centered, self-directed learning environment that encourages independence and curiosity.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>State-of-the-Art Facilities</h3>
-                    <p>Our campus features modern classrooms, playgrounds, and community spaces designed to inspire creativity, exploration, and socialization.</p>
-                </div>
+    <div class="hero">
+        <h1>Empowering Young Minds, One Discovery at a Time</h1>
+        <p>At Atlanta Montessori International School - Druid Hills, we inspire a love of learning, foster independence, and nurture curiosity in each of our students.</p>
+        <button>Learn More</button>
+    </div>
+    <section class="highlights">
+        <h2>Our Highlights</h2>
+        <div class="row">
+            <div class="col-4">
+                <i class="fas fa-child"></i>
+                <h3>Whole-Child Education</h3>
+                <p>We provide a comprehensive education that addresses the intellectual, social, emotional, and physical needs of each student.</p>
             </div>
-        </section>
-        <section class="statistics">
-            <h2>Stats that Speak for Themselves</h2>
-            <ul>
-                <li>95% of graduates attend top-tier colleges and universities</li>
-                <li>85% of parents report a significant improvement in their child's academic performance</li>
-                <li>90% of students participate in extracurricular activities and clubs</li>
-            </ul>
-        </section>
-        <section class="call-to-action">
-            <h2>Join Our Community of Curious Learners</h2>
-            <p>Take the first step towards unlocking your child's full potential. Schedule a tour or request more information today.</p>
-            <button>Schedule a Tour</button>
-        </section>
-    </main>
+            <div class="col-4">
+                <i class="fas fa-book-open"></i>
+                <h3>Montessori Method</h3>
+                <p>We follow the Montessori method, which emphasizes self-directed learning, hands-on activity, and collaborative play.</p>
+            </div>
+            <div class="col-4">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>College Prep</h3>
+                <p>Our students consistently excel on college entrance exams and go on to attend top colleges and universities around the world.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Parents Say</h2>
+        <div class="row">
+            <div class="col-4">
+                <blockquote>
+                    "Atlanta Montessori International School has given my child a lifelong love of learning and a strong sense of self-confidence."
+                    <cite> - Sarah P.</cite>
+                </blockquote>
+            </div>
+            <div class="col-4">
+                <blockquote>
+                    "The Montessori method has been a game-changer for our family. Our child is thriving and excited about school every day."
+                    <cite> - John D.</cite>
+                </blockquote>
+            </div>
+            <div class="col-4">
+                <blockquote>
+                    "The teachers at Atlanta Montessori International School are caring, supportive, and genuinely invested in the success of each student."
+                    <cite> - Emily G.</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 Atlanta Montessori International School - Druid Hills. All rights reserved.</p>
+        <p>&copy; 2023 Atlanta Montessori International School - Druid Hills</p>
     </footer>
 </body>
 </html>
